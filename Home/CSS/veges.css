@@ -1,0 +1,333 @@
+/*Importing Google Fonts&Icon Library*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Rich Black: 131b23;*/
+:root{
+    --dark: #da2c38;
+    --mid: #f1f1f1;
+    --light: #fff;
+    --color: #131b23;
+    --box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.2);
+}
+
+
+/*Setting up & removing default styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    color: var(--color);
+}
+
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+/* Venues Section */
+.venues{
+    top: 0;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    background-color: #131b23;
+    transition: 0.3s ease-in-out;
+    z-index: 9999999;
+}
+.venues .close-btn{/*Closing Venue Button*/
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.5em;
+    color: var(--light);
+    text-decoration: none;
+    display: none;
+}
+.venues .title{/*Heading*/
+    display: none;
+    color: var(--light);
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+.venues .title h1 span{
+    color: var(--dark);
+}
+.venues .title h1{
+    font-size: 2em;
+    color: var(--light);
+}
+.venues .container{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.venues .container .column{/*Column for each venue card*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 30%;
+}
+.venues .container .column .card{
+    height: 80%;
+    width: 80%;
+    background-color: var();
+    padding: 10px;
+    border-radius: 5px;
+}
+.venues .container picture{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+.venues .container picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.venues .container .content{
+    height: 40%;
+}
+.venues .container .content h1{
+    font-size: 1em;
+    color: var(--light);
+}
+.venues .container .content p{
+    font-size: 0.8em;
+    color: var(--light);
+}
+
+
+
+
+
+
+/*Vegetable page title*/
+.vege-title{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.vege-title h1{
+    font-size: 2em;
+}
+.vege-title h1 span{
+    color: var(--dark);
+}
+
+/*venue Background & Position class*/
+.venue-open{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.venue-open a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+/*Products Section*/
+.products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+/*Fixed left bar*/
+.products .sticky{
+    width: 15%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.products .sticky h1{
+    margin-left: 10px;
+}
+.products .sticky ul{
+    margin-left: 10px;
+    list-style: none;
+    border-left: 5px solid var(--dark);
+}
+.products .sticky ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.products .sticky ul li:hover a{
+    color: var(--dark);
+}
+/*Top Add*/
+.products .sticky .top-add{
+    width: 170px;
+    height: 155px;
+    margin-left: 10px;
+    background-color: #131b23;
+    border-radius: 5px;
+    transform: translateX(-300px);
+    transition: 0.3s ease-in-out;
+}
+.products .sticky .top-add.pop-out{
+    transform: translateX(0);
+}
+/*Bottom Add*/
+.bottom-add{
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 170px;
+    height: 230px;
+    background-color: #131b23;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    animation: addChange 10s ease infinite;
+}
+/*Animation for bottom add*/
+@keyframes addChange {
+    0%     { background-image: url('./Bg-Images/Home/home-bg-baby-products.jpg'); }
+    33%    { background-image: url("./Bg-Images/Home/home-bg-baby-products.jpg");}
+    34%    { background-image: url("./Bg-Images/Home/home-bg-coffee.jpg");}
+    66%    { background-image: url('./Bg-Images/Home/home-bg-coffee.jpg'); }
+    67%    { background-image: url("./Bg-Images/Home/home-bg-bread.jpg");}
+    100%   { background-image: url('./Bg-Images/Home/home-bg-bread.jpg'); }
+}
+
+
+
+
+
+
+
+/*Product cards section*/
+.product-cards{
+    width: 85%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.products .product-cards .card{/*product card*/
+    padding: 20px;
+    background-color: var(--mid);
+    text-align: center;
+    height: 350px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+.products .product-cards .card:hover{
+    transform: translateY(-10px);
+}
+.products .product-cards .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: initial;
+}
+.products .product-cards .card h1{
+    font-size: 1.4em;
+    text-align: left;
+}
+.products .product-cards .card h5{
+    text-align: left;
+    font-size: 1em;
+}
+.products .product-cards .card h6{
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.products .product-cards .card a{
+    text-decoration: none;
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    .venues{
+        position: fixed;
+        overflow-y: scroll;
+        transition: 0.3s ease-in-out;
+    }
+    .venues .title{
+        left: 10%;
+    }
+    .venues .title h1{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .venues .container{
+        margin-top: 200px;
+        padding-top: 80px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .venues .container .column{
+        width: 100%;
+        padding: 10px 0 10px 0;
+        height: 80%;
+    }
+    .venues .container .column .card{
+        height: 100%;
+    }
+    .venue-open{
+        justify-content: center;
+    }
+    
+    
+    .products .sticky{
+        display: none;
+    }
+    .product-cards{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 8%;
+    }
+    
+}
