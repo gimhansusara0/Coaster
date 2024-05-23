@@ -1,0 +1,102 @@
+/*Importing Google Fonts&Icon Library*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Rich Black: 131b23;*/
+:root{
+    --dark: #da2c38;
+    --mid: #f1f1f1;
+    --light: #fff;
+    --color: #131b23;
+    --box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.2);
+}
+
+
+/*Setting up & removing default styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    color: var(--color);
+}
+
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+/* Cart section Styling */
+.cart{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container within the cart section with all the products and pricing */
+.cart .container{
+    width: 80%;
+    height: 70%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cart .container .card{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 5px 0px;
+    border-bottom: 1px solid var(--color);
+}
+.cart .container .card .box{
+    height: 100px;
+    width: 30%;
+    display: flex;
+}
+.cart .container .card .box img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+
+}
+.cart .container .card .box h2{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.cart .container .card .price{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+}
+.cart .container .card .right{
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+
+
+/* Subtotal Section */
+.cart .sub{
+}
+.cart .box h1{
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-left: 20px;
+}

@@ -176,10 +176,12 @@ body{
 .products .product-cards .card h5{
     width: 90%;
     font-size: 1em;
+    margin-top: -10px;
 }
 .products .product-cards .card h6{
     width: 90%;
     font-weight: 500;
+    margin-bottom: 25px;
 }
 .products .product-cards .card a{
     text-decoration: none;
