@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Coaster</title>
+
+    <!--Connecting Style Sheets-->
+    <link rel="stylesheet" href="./CSS/registration.css">
+
+    <!--Nav & Footer-->
+    <link rel="stylesheet" href="./CSS/nav-footer.css">
+    
+    <!--Connecting Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+           <!--Navigation Bar-->
+<header class="navigation">
+    <nav class="nav">
+    </nav>
+    <article class="nav-animation"></article>
+</header>
+
+<!-- Title -->
+<section class="title">
+    <h1>Choose Your Plan</h1>
+</section>
+
+
+<!-- Subscription PLans -->
+<section class="plans">
+
+    <!-- Plan 1 -->
+    <article class="plan">
+        <h1>COASTER SAVER</h1>
+        <ul>
+            <li><span>&#x2714;</span> 5% off on all purchases</li>
+            <li><span>&#x2714;</span> Exclusive member-only discounts</li>
+            <li><span>&#x2714;</span> Access to special promotions</li>
+        </ul>
+        <a href="#sub-form">SUBSCRIBE</a>
+    </article>
+
+    <!-- Plan 2 -->
+    <article class="plan">
+        <h1>COASTER SHOPPER</h1>
+        <ul>
+            <li><span>&#x2714;</span> 5% off on all purchases</li>
+            <li><span>&#x2714;</span> Exclusive member-only discounts</li>
+            <li><span>&#x2714;</span> Access to special promotions</li>
+            <li><span>&#x2714;</span> Monthly newsletters with special offers</li>
+        </ul>
+        <a href="#sub-form">SUBSCRIBE</a>
+    </article>
+
+    <!-- Plan 3 -->
+    <article class="plan">
+        <h1>COASTER VIP</h1>
+        <ul>
+            <li><span>&#x2714;</span> 15% off on all purchases</li>
+            <li><span>&#x2714;</span> Exclusive member-only discounts</li>
+            <li><span>&#x2714;</span> Access to special promotions</li>
+            <li><span>&#x2714;</span> Birthday discounts</li>
+            <li><span>&#x2714;</span> Free home delivery on orders over Rs.2000</li>
+            <li><span>&#x2714;</span> Monthly newsletters with special offers</li>
+            <li><span>&#x2714;</span> Early access to holiday sales</li>
+        </ul>
+        <a href="#sub-form">SUBSCRIBE</a>
+    </article>
+
+    <!-- Plan 4 -->
+    <article class="plan">
+        <h1>COASTER ELITE</h1>
+        <ul>
+            <li><span>&#x2714;</span> 20% off on all purchases</li>
+            <li><span>&#x2714;</span> Exclusive member-only discounts</li>
+            <li><span>&#x2714;</span> Access to special promotions</li>
+            <li><span>&#x2714;</span> Birthday discounts</li>
+            <li><span>&#x2714;</span> Free home delivery on all orders</li>
+            <li><span>&#x2714;</span> Priority customer service</li>
+            <li><span>&#x2714;</span> Early access to new products</li>
+            <li><span>&#x2714;</span> Monthly newsletters with special offers</li>
+            <li><span>&#x2714;</span> Invitation to exclusive store events</li>
+        </ul>
+        <a href="#sub-form">SUBSCRIBE</a>
+    </article>
+
+
+
+
+</section>
+
+
+
+<section class="sub-form" id="sub-form">
+    <h1>LOYALTY REGISTRATION</h1>
+
+    <!-- Form -->
+    <form action="#">
+        <!-- Left side of the form -->
+        <article class="top">
+            <article class="left">
+                <article class="group">
+                    <label for="fullName">Name:</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required>
+                </article>
+        
+                <article class="group">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="Enter E-mail" required>
+                </article>
+        
+                <article class="group">
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                </article>
+        
+                <article class="group">
+                    <label for="loyalty">Loyalty Scheme:</label>
+                    <select name="loyalty" id="loyalty">
+                        <option value="bronze">Coaster Saver</option>
+                        <option value="silver">Coaster Shopper</option>
+                        <option value="gold">Coaster VIP</option>
+                        <option value="platinum">Coaster Elite</option>
+                    </select>
+                </article>
+        
+            </article>
+    
+    
+            <!-- Right side of the form -->
+            <article class="right">
+                <article class="group">
+                    <label for="card-name">Cardholder Name:</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Enter Card Holder's Name" required>
+                </article>
+                <article class="group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" required>
+                </article>
+                <article class="group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="date" id="expiry-date" name="expiry-date" placeholder="Enter Card Expiry Date" required>
+                </article>
+                <article class="group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV Number" required>
+                </article>
+                <article class="group">
+                    <label for="card-type">Card Type:</label>
+                    <select id="card-type" name="card-type" required>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">American Express</option>
+                        <option value="discover">Discover</option>
+                    </select>
+                </article>
+            </article>
+        </article>
+       
+
+        <article class="bottom">
+            <button type="submit">Register</button>
+        </article>
+
+    </form>
+</section>
+
+
+
+
+
+
+<!--Footer-->
+<footer class="footer">
+
+
+    <!--Left side of the footer (Logo/Description)-->
+        <section class="left element">
+            <h1>Coaster</h1>
+            <p>Your neighborhood grocery store! We're your one-stop shop for fresh produce, pantry essentials, and friendly service.
+                 Come on in and let us help you stock up on everything you need for delicious meals and snacks.</p>
+            <section class="socials">
+                <a href="#"><img src="./Images/Icons/facebook.svg" alt="Facebook Icon"></a>
+                <a href="#"><img src="./Images/Icons/x-twitter.svg" alt="Twitter Icon"></a>
+                <a href="#"><img src="./Images/Icons/instagram.svg" alt="Instagram Icon"></a>
+            </section>
+        </section>
+    
+        <!--Mid Part of the footer (Branches)-->
+      <section class="mid element">
+        <h1>Branches</h1>
+        <article class="branch1 branch">
+            <img src="./Images/google-img.jpeg" alt="">
+            <h5>Galle Branch - 12/3, Galle</h5>
+        </article>
+        <article class="branch2 branch">
+            <img src="./Images/google-img.jpeg" alt="">
+            <h5>Kandy Branch - No.3,Kandy</h5>
+        </article>
+      </section>
+    
+    
+      <!--Right part of the footer (Other Links and Categories)-->
+    <section class="right element">
+        <!--Quick Links-->
+        <section class="quick-links">
+            <h1>Quick Links</h1>
+            <ol>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Products</li></a>
+                <a href="#"><li>Shop</li></a>
+                <a href="#"><li>Account</li></a>
+            </ol>
+        </section>
+    
+        <!--Category Links-->
+        <section class="category-links">
+            <h1>Categories</h1>
+            <ul>
+                <a href="#"><li>Vegetables</li></a>
+                <a href="#"><li>Meat</li></a>
+                <a href="#"><li>Fruits</li></a>
+                <a href="#"><li>Dairy</li></a>
+                <a href="#"><li>Baby Products</li></a>
+                <a href="#"><li>Foods</li></a>
+                <a href="#"><li>Cosmetics</li></a>
+                <a href="#"><li>Cleaning Supplies</li></a>
+                <a href="#"><li>Beverages</li></a>
+            </ul>
+        </section>
+    </section>
+    </footer>
+    
+    
+    
+    <!--Copyrights-->
+    <section class="copyright">&copy;Coaster 2024</section>
+
+
+</body>
+</html>
