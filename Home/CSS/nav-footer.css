@@ -1,0 +1,396 @@
+/*Importing Google Fonts&Icon Library*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Rich Black: 131b23;*/
+:root{
+    --dark: #da2c38;
+    --mid: #f1f1f1;
+    --light: #fff;
+    --color: #131b23;
+    --box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.2);
+}
+
+
+/*Setting up & removing default styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    color: var(--color);
+}
+
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+
+
+/* Navigation bar Styling */
+.navigation{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .nav{
+    width: 90%;
+    height: 80%;
+    border-radius: 100px;
+    background-color: var(--dark);    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation .nav h1{
+    margin-left: 10px;
+    flex: 10;
+    color: var(--light);
+}
+.navigation .nav .search{
+    flex: 10;
+    display: flex;
+    justify-content: center;
+}
+.navigation .nav .search .search-bar{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-left: 10px;
+    width: 250px;
+    border: none;
+}
+.navigation .nav .search button{
+    font-size: 1em;
+    width: 50px;
+    padding: 5px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.navigation .nav .nav-links{
+    flex: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navigation .nav .nav-links a{
+    text-decoration: none;
+    color: var(--light);
+
+}
+.navigation .nav .nav-links .icon{
+    color: var(--light);
+}
+
+.navigation .nav .dropbtn {
+    background-color: var(--dark);
+    color: white;
+    font-size: 16px;
+    border: none;
+  }
+  
+.navigation .nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.navigation .nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.navigation .nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+.hamburger {
+    display: none; /* Hide hamburger by default */
+    font-size: 1.8rem;
+    color: var(--light);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer Section Styling*/
+
+footer{
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    overflow: hidden;
+}
+
+/*Footer Left section*/
+footer .left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+footer .left h1{/*Footer left Store Name*/
+    font-size: 2em;
+    color: var(--light);
+}
+footer .left p{/*Store Description*/
+    text-wrap: wrap;
+    color: var(--light);
+}
+footer .left .socials{/*Social Media Link section*/
+    display: inline;
+}
+footer .left .socials img{/*Social Media Links*/
+    width: 30px;
+    margin: 5px;
+}
+
+
+/*Mid part of the footer*/
+footer .mid{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    
+}
+footer .mid h1{ /*Mid topic*/
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--light);
+}
+footer .mid .branch{/*General Branch section styling*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px 0 5px 0;
+}
+footer .mid .branch img{/*General branch Image styling*/
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+footer .mid .branch h5{/*General branch description styling*/
+    margin-left: -1px;
+    color: var(--light);
+    padding: 5px;
+}
+footer .mid .branch1{/*Branch one styling*/
+    margin-left: -120px;
+}
+footer .mid .branch2{/*Branch two styling*/
+    margin-left: -100px;
+}
+
+
+
+/*Right side of the footer (Quick Links - Categories)*/
+footer .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%;
+}
+
+/*Footer Quick Links Styling*/
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    
+}
+footer .quick-links h1{
+    font-size: 1.5em;
+    margin-top: -18px;
+    margin-left: -20px;
+    color: var(--light);
+}
+footer .quick-links a{
+    text-decoration: none;
+    color: var(--light);
+}
+footer .quick-links ol{
+    margin-top: -80px;
+}
+footer .quick-links li{
+    color: var(--light);
+}
+
+
+/*Footer Category Links Styling*/
+footer .category-links{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+footer .category-links ul li{
+    list-style: none;
+    color: var(--light);
+}
+footer .category-links h1{
+    font-size: 1.5em;
+    color: var(--light);
+}
+footer .category-links a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+
+
+/*Copyrights*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light);
+    border-top: 2px solid var(--light);
+    padding: 5px 0 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    footer{
+        width: 100%;
+        height: 180vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    footer .left{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    footer .mid{
+        width: 100%;
+        padding: 10px;
+        margin-top: -80px;
+    }
+    footer .mid .branch1{
+        padding-left: 60px;
+    }
+    footer .mid .branch2{
+        margin-right: -60px;
+    }
+    footer .right{
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 30px;
+        flex-direction: column;
+        height: 30%;
+    }
+    footer .right .quick-links{
+        padding-left: 15px;
+    }
+    footer .right .quick-links h1{
+        margin-top: -80px;
+    }
+    footer .right .quick-links ol{
+        margin-top: -10px;
+    }
+
+
+    .navigation .nav .nav-links{
+        display: none;
+    }
+    .navigation .nav .search{
+        display: none;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .navigation .nav{
+        width: 98%;
+    }
+    .navigation .nav .nav-links{
+        display: none;
+        position: absolute;
+        background-color: var(--dark);
+        width: 100%;
+        top: 80px;
+        left: 0;
+        height: 80vh;
+    }
+    .navigation .nav .nav-links a,
+    .navigation .nav .nav-links .dropdown .dropbtn{
+        font-size: 1.8em;
+    }
+    .navigation .nav .search{
+        display: none;
+    }
+    .navigation .nav .nav-links.show{
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger{
+        display: block;
+        margin-right: 20px;
+        }
+}

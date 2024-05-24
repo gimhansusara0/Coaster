@@ -1,0 +1,197 @@
+/*Importing Google Fonts&Icon Library*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Rich Black: 131b23;*/
+:root{
+    --dark: #da2c38;
+    --mid: #f1f1f1;
+    --light: #fff;
+    --color: #131b23;
+    --box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+}
+
+
+/*Setting up & removing default styling*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    color: var(--color);
+}
+
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+/* Title Styling */
+.title{
+    padding-top: 30px;
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+
+/* Subscription Plans Styling */
+.plans{
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Each Subscription Plan Styling */
+.plans .plan{
+    border: 1px solid var(--dark);
+    width: 23%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--mid);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+}
+.plans .plan:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 1px 0px var(--dark);
+}
+.plans .plan h1{
+    color: var(--dark);
+    flex: 10;
+    font-size: 1.5em;
+}
+.plans .plan ul{
+    flex: 85;
+    list-style: none;
+    line-height: 5vh;;
+}
+
+.plans .plan ul li span{
+    color: var(--dark);
+}
+.plans .plan a{
+    width: 280px;
+    flex: 5;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--dark);
+    padding: 10px;
+    border-radius: 50px;
+    border: 3px solid var(--dark);
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+.plans .plan a:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Subscription Form */
+.sub-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.sub-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--light);
+}
+.sub-form form{
+    width: 40%;
+    border-radius: 5px;
+    height: 80%;
+    display: flex;
+    background-color: var(--color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub-form .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub-form .top .left{
+    margin-top: -10%;
+}
+.sub-form .top .group input,
+.sub-form .top .group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+}
+.sub-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--light);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sub-form .group form .left{
+    margin-top: 10%;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .plans{
+        flex-direction: column;
+        height: 300vh;
+    }
+    .plans .plan{
+        margin: 10px 0 10px 0;
+        width: 80%;
+        height: 600px;
+    }
+    .sub-form{
+        height: 150vh;
+    }
+    .sub-form form{
+        width: 100%;
+        background-color: transparent;
+    }
+    .sub-form form .top{
+        flex-direction: column;
+    }
+}
