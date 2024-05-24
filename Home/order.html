@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Coaster</title>
+
+    <!--Connecting Style Sheets-->
+    <link rel="stylesheet" href="./CSS/order.css">
+
+    <!--Nav & Footer-->
+    <link rel="stylesheet" href="./CSS/nav-footer.css">
+    
+    <!--Connecting Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#da2c38">
+<meta name="msapplication-TileColor" content="#da2c38">
+<meta name="theme-color" content="#ffffff">
+
+
+</head>
+<body>
+           <!--Navigation Bar-->
+           <header class="navigation">
+            <nav class="nav">
+                <!-- Brand Name -->
+                <h1>COASTER<span>.</span></h1>
+        
+                <!-- Search Bar -->
+                <article class="search">
+                    <input type="text" class="search-bar" placeholder="Search Products">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">
+                            search
+                            </span>
+                    </button>
+                </article>
+        
+                <article class="nav-links" id="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    
+                     <!-- Drop Down -->
+                <article class="dropdown">
+                    <button class="dropbtn">Products</button>
+                    <article class="dropdown-content">
+                    <a href="./vegetables.html">Vegetables</a>
+                    <a href="./fruits.html">Fruits</a>
+                    <a href="./dairy.html">Dairy</a>
+                    <a href="./cosmetics.html">Cosmetics</a>
+                    </article>
+                </article>
+        
+                    <a href="./order.html">
+                        <span class="material-symbols-outlined icon">
+                            shopping_cart
+                            </span>
+                    </a>
+        
+                    <a href="./registration.html">
+                        <span class="material-symbols-outlined icon">
+                            account_circle
+                            </span>
+                    </a>
+              
+                </article>
+    
+    
+    
+                <div class="hamburger" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+    
+            </nav>
+            </header>
+
+
+
+
+
+<!-- Products in the Cart -->
+<section class="cart">
+    <!-- Inner container which holds all the products -->
+    <section class="container">
+
+        <!-- Product 1 -->
+        <article class="card">
+            <article class="box">
+                <img src="./Images/Products/Dairy/cheese/pic10.jpg" alt="Product Image">
+                <h2>Ambewela Cheese</h2>
+            </article>
+
+            <article class="price">
+                <h5>Rs.450</h5>
+            </article>
+
+            <article class="right"></article>
+
+
+        </article>
+
+
+
+
+        <!-- Product 2 -->
+         <article class="card">
+            <article class="box">
+                <img src="./Images/Products/Dairy/cheese/pic6.jpg" alt="Product Image">
+                <h2>Processed Cheese</h2>
+            </article>
+
+            <article class="price">
+                <h5>Rs.580</h5>
+            </article>
+
+            <article class="right"></article>
+
+
+        </article>
+
+
+
+        <!-- Product 2 -->
+        <article class="card">
+            <article class="box">
+                <img src="./Images/Products/Dairy/milk-powder/anlene-gold.jpg" alt="Product Image">
+                <h2>Anelene Gold</h2>
+            </article>
+
+            <article class="price">
+                <h5>Rs.560</h5>
+            </article>
+
+            <article class="right"></article>
+
+
+        </article>
+
+        
+        <!-- Total -->
+        <article class="card sub">
+            <article class="box">
+                <h1>Subtotal</h1>
+            </article>
+
+            <article class="price">
+                <h5></h5>
+            </article>
+
+            <article class="right"><h3>Rs.1590</h3></article>
+
+
+        </article>
+    </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="sub-form" id="sub-form">
+    <h1>ORDER & PAYMENT DETAILS</h1>
+
+    <!-- Form -->
+    <form action="#">
+        <!-- Left side of the form -->
+        <article class="top">
+            <article class="left">
+                <article class="group">
+                    <label for="fullName">Name:</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required>
+                </article>
+        
+                <article class="group">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="Enter E-mail" required>
+                </article>
+        
+                <article class="group">
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                </article>
+        
+                <article class="group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
+                </article>
+        
+            </article>
+    
+    
+            <!-- Right side of the form -->
+            <article class="right">
+                <article class="group">
+                    <label for="card-name">Cardholder Name:</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Enter Card Holder's Name" required>
+                </article>
+                <article class="group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" required>
+                </article>
+                <article class="group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="date" id="expiry-date" name="expiry-date" placeholder="Enter Card Expiry Date" required>
+                </article>
+                <article class="group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV Number" required>
+                </article>
+                <article class="group">
+                    <label for="card-type">Card Type:</label>
+                    <select id="card-type" name="card-type" required>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">American Express</option>
+                        <option value="discover">Discover</option>
+                    </select>
+                </article>
+            </article>
+        </article>
+       
+
+        <article class="bottom">
+            <button type="submit">Proceed</button>
+        </article>
+
+    </form>
+</section>
+
+
+
+
+
+
+<script src="./Javascript/menu.js"></script>
+
+</body>
+</html>
